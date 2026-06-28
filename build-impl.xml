@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:j2seproject1="http://www.netbeans.org/ns/j2se-project/1"
+         xmlns:j2seproject3="http://www.netbeans.org/ns/j2se-project/3"
+         xmlns:jaxrpc="http://www.netbeans.org/ns/j2se-project/jax-rpc"
+         basedir=".." default="default" name="StudentGradeTracker-impl">
+    <property file="nbproject/private/private.properties"/>
+    <property file="nbproject/project.properties"/>
+    
+    <target name="default" depends="-do-init,compile,run"/>
+    
+    <target name="-do-init">
+        <mkdir dir="${build.classes.dir}"/>
+        <mkdir dir="${dist.dir}"/>
+        <mkdir dir="${build.test.classes.dir}"/>
+    </target>
+    
+    <target name="compile" depends="-do-init">
+        <javac srcdir="${src.dir}" destdir="${build.classes.dir}"
+               source="${javac.source}" target="${javac.target}"
+               encoding="${source.encoding}" includeantruntime="false"
+               debug="true">
+            <classpath path="${javac.classpath}"/>
+        </javac>
+    </target>
+    
+    <target name="run" depends="compile">
+        <java classname="${main.class}" fork="true">
+            <classpath path="${run.classpath}"/>
+        </java>
+    </target>
+    
+    <target name="clean">
+        <delete dir="${build.dir}"/>
+        <delete dir="${dist.dir}"/>
+    </target>
+    
+    <target name="jar" depends="compile">
+        <jar compress="${jar.compress}" destfile="${dist.jar}">
+            <fileset dir="${build.classes.dir}"/>
+            <manifest>
+                <attribute name="Main-Class" value="${main.class}"/>
+            </manifest>
+        </jar>
+    </target>
+    
+    <target name="test"/>
+</project>
