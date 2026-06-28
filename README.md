@@ -71,14 +71,23 @@ StudentGradeTracker/
 ## 📸 Screenshots
 
 ## Dashboard 
+
 <img width="724" height="473" alt="image" src="https://github.com/user-attachments/assets/418c789e-885b-47e4-a198-5ad73dac4dba" />
+
 ## Add Student
+
 <img width="719" height="469" alt="image" src="https://github.com/user-attachments/assets/f1b37d2f-716a-46dd-b921-6f67b9cee0a2" />
+
 ## View Student
+
 <img width="721" height="482" alt="image" src="https://github.com/user-attachments/assets/3133bdd6-69a5-45e9-b570-e3b08b6c421c" />
+
 ## Statistics
+
 <img width="722" height="476" alt="image" src="https://github.com/user-attachments/assets/09234c19-2787-43cb-b86c-54ca63aebd72" />
-## Aboutr
+
+## About
+
 <img width="725" height="475" alt="image" src="https://github.com/user-attachments/assets/17af5e58-779d-4931-97c5-07d29ab08a8c" />
 
 _
